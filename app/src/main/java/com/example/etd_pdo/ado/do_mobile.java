@@ -67,7 +67,8 @@ public class do_mobile extends AppCompatActivity {
         NotificationCompat.Builder notif = new NotificationCompat.Builder(this);
         notif.setContentTitle("Notif");
         notif.setContentText("Notif");
-        notif.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_euro_symbol_black_18dp));
+        notif.setSmallIcon(R.drawable.ic_euro_symbol_white_18dp);//BitmapFactory.decodeResource(getResources(), R.drawable.ic_euro_symbol_black_18dp));
+
         NotificationManager notifmanager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         notifmanager.notify(1, notif.build());
     }
